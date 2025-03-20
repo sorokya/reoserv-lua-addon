@@ -7,8 +7,8 @@ world = {}
 ---@param strength number The magnitude of the earthquake
 function world.quake(strength) end
 
----Make a POST request to the provided URL
----@param callback fun() The URL to request
+---Attach a callback on server tick events (default 125ms)
+---@param callback fun() The function to run on server tick
 function world.on_tick(callback) end
 
 return world
