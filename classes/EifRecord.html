@@ -1,0 +1,317 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+<head>
+    <title>REOSERV Lua API Documentation</title>
+    <link rel="stylesheet" href="../ldoc_new.css" type="text/css" />
+</head>
+<body>
+
+<div id="container">
+
+<div id="product">
+	<div id="product_logo"></div>
+	<div id="product_name"><big><b></b></big></div>
+	<div id="product_description"></div>
+</div> <!-- id="product" -->
+
+
+<div id="main">
+
+
+<!-- Menu -->
+
+<div id="navigation">
+<br/>
+<h1>REOSERV Lua Addon</h1>
+
+
+<ul>
+  <li><a href="../index.html">Index</a></li>
+</ul>
+
+<h2>Contents</h2>
+<ul>
+<li><a href="#Tables">Tables</a></li>
+</ul>
+
+
+<h2>Classes</h2>
+<ul class="nowrap">
+  <li><strong>EifRecord</strong></li>
+</ul>
+<h2>Modules</h2>
+<ul class="nowrap">
+  <li><a href="../modules/world.html">world</a></li>
+</ul>
+<h2>Manual</h2>
+<ul class="nowrap">
+  <li><a href="../manual/README.md.html">README</a></li>
+</ul>
+
+</div>
+
+<div id="content">
+
+<h1>Class <code>EifRecord</code></h1>
+<p>Represents an item record in an Endless Item File.</p>
+<p>
+
+</p>
+
+
+<h2><a href="#Tables">Tables</a></h2>
+<table class="function_list">
+	<tr>
+	<td class="name" nowrap><a href="#eifrecord.ItemType">eifrecord.ItemType</a></td>
+	<td class="summary">Enumeration of item types.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#eifrecord.ItemSubtype">eifrecord.ItemSubtype</a></td>
+	<td class="summary">Enumeration of item subtypes.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#eifrecord.ItemSpecial">eifrecord.ItemSpecial</a></td>
+	<td class="summary">Enumeration of special item rarities.</td>
+	</tr>
+	<tr>
+	<td class="name" nowrap><a href="#eifrecord.ItemSize">eifrecord.ItemSize</a></td>
+	<td class="summary">Enumeration of item sizes.</td>
+	</tr>
+</table>
+
+<br/>
+<br/>
+
+
+    <h2 class="section-header "><a name="Tables"></a>Tables</h2>
+
+    <dl class="function">
+    <dt>
+    <a name = "eifrecord.ItemType"></a>
+    <strong>eifrecord.ItemType</strong>
+    </dt>
+    <dd>
+    Enumeration of item types.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">General</span>
+        General items
+        </li>
+        <li><span class="parameter">Reserved1</span>
+        Reserved
+        </li>
+        <li><span class="parameter">Currency</span>
+        Currency items
+        </li>
+        <li><span class="parameter">Heal</span>
+        Healing items
+        </li>
+        <li><span class="parameter">Teleport</span>
+        Teleportation items
+        </li>
+        <li><span class="parameter">Reserved5</span>
+        Reserved
+        </li>
+        <li><span class="parameter">ExpReward</span>
+        Experience reward items
+        </li>
+        <li><span class="parameter">Reserved7</span>
+        Reserved
+        </li>
+        <li><span class="parameter">Reserved8</span>
+        Reserved
+        </li>
+        <li><span class="parameter">Key</span>
+        Key items
+        </li>
+        <li><span class="parameter">Weapon</span>
+        Weapons
+        </li>
+        <li><span class="parameter">Shield</span>
+        Shields
+        </li>
+        <li><span class="parameter">Armor</span>
+        Armor pieces
+        </li>
+        <li><span class="parameter">Hat</span>
+        Hats
+        </li>
+        <li><span class="parameter">Boots</span>
+        Boots
+        </li>
+        <li><span class="parameter">Gloves</span>
+        Gloves
+        </li>
+        <li><span class="parameter">Accessory</span>
+        Accessories
+        </li>
+        <li><span class="parameter">Belt</span>
+        Belts
+        </li>
+        <li><span class="parameter">Necklace</span>
+        Necklaces
+        </li>
+        <li><span class="parameter">Ring</span>
+        Rings
+        </li>
+        <li><span class="parameter">Armlet</span>
+        Armlets
+        </li>
+        <li><span class="parameter">Bracer</span>
+        Bracers
+        </li>
+        <li><span class="parameter">Alcohol</span>
+        Alcoholic items
+        </li>
+        <li><span class="parameter">EffectPotion</span>
+        Effect potions
+        </li>
+        <li><span class="parameter">HairDye</span>
+        Hair dye items
+        </li>
+        <li><span class="parameter">CureCurse</span>
+        Curse-removal items
+        </li>
+        <li><span class="parameter">Reserved26</span>
+        Reserved
+        </li>
+        <li><span class="parameter">Reserved27</span>
+        Reserved
+        </li>
+        <li><span class="parameter">Reserved28</span>
+        Reserved
+        </li>
+        <li><span class="parameter">Reserved29</span>
+        Reserved
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "eifrecord.ItemSubtype"></a>
+    <strong>eifrecord.ItemSubtype</strong>
+    </dt>
+    <dd>
+    Enumeration of item subtypes.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">None</span>
+        No subtype
+        </li>
+        <li><span class="parameter">Ranged</span>
+        Ranged weapons
+        </li>
+        <li><span class="parameter">Arrows</span>
+        Arrows
+        </li>
+        <li><span class="parameter">Wings</span>
+        Wings
+        </li>
+        <li><span class="parameter">Reserved4</span>
+        Reserved
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "eifrecord.ItemSpecial"></a>
+    <strong>eifrecord.ItemSpecial</strong>
+    </dt>
+    <dd>
+    Enumeration of special item rarities.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">Normal</span>
+        Normal item
+        </li>
+        <li><span class="parameter">Rare</span>
+        Rare item
+        </li>
+        <li><span class="parameter">Legendary</span>
+        Legendary item
+        </li>
+        <li><span class="parameter">Unique</span>
+        Unique item
+        </li>
+        <li><span class="parameter">Lore</span>
+        Lore-bound item
+        </li>
+        <li><span class="parameter">Cursed</span>
+        Cursed item
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+    <dt>
+    <a name = "eifrecord.ItemSize"></a>
+    <strong>eifrecord.ItemSize</strong>
+    </dt>
+    <dd>
+    Enumeration of item sizes.
+
+
+    <h3>Fields:</h3>
+    <ul>
+        <li><span class="parameter">Size1x1</span>
+        1x1 item
+        </li>
+        <li><span class="parameter">Size1x2</span>
+        1x2 item
+        </li>
+        <li><span class="parameter">Size1x3</span>
+        1x3 item
+        </li>
+        <li><span class="parameter">Size1x4</span>
+        1x4 item
+        </li>
+        <li><span class="parameter">Size2x1</span>
+        2x1 item
+        </li>
+        <li><span class="parameter">Size2x2</span>
+        2x2 item
+        </li>
+        <li><span class="parameter">Size2x3</span>
+        2x3 item
+        </li>
+        <li><span class="parameter">Size2x4</span>
+        2x4 item
+        </li>
+    </ul>
+
+
+
+
+
+</dd>
+</dl>
+
+
+</div> <!-- id="content" -->
+</div> <!-- id="main" -->
+<div id="about">
+<i>generated by <a href="http://github.com/lunarmodules/LDoc">LDoc 1.5.0</a></i>
+<i style="float:right;">Last updated 2025-03-20 16:23:39 </i>
+</div> <!-- id="about" -->
+</div> <!-- id="container" -->
+</body>
+</html>
